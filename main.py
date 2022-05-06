@@ -17,6 +17,7 @@ that often must be taken into account when working with text from files
 
 More information about line and file endings:
 https://realpython.com/read-write-files-python/
+https://docs.python.org/3/tutorial/inputoutput.html
 '''
 print("------Reading all lines and line terminations at once")
 with open('text.txt', 'r') as reader:
@@ -52,10 +53,10 @@ with open('second_text.txt', 'w') as writer:
 
 '''the reader object provides useful formatting functions
 the code below reads a file where the names are written in a line and seprated by a whitespace.
-the rsplit() function gets the names seperated by the whitespace. You can pass other seperators to
+the rsplit() function gets the names separated by the whitespace. You can pass other seperators to
 the rsplit() function too like a e.g.: comma or underscore. Lookup other useful funtions'''
 
-print("------Seperating words by whitespace")
+print("------Separating words by whitespace")
 with open('names_inline.txt', 'r') as reader:
     contents = reader.readlines()
     print(contents[0])
